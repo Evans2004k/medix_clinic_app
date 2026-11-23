@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - Medix Hub</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/favicon.png' %}" rel="icon">
+  <link href="{% static 'images/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- Main CSS File -->
+  <!-- =======================================================
+  * Template Name: Clinic
+  * Template URL: https://bootstrapmade.com/clinic-bootstrap-template/
+  * Updated: Jul 23 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:medicshub@clinic.com">medicshub@clinic.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#!" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#!" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#!" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#!" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="{% static 'images/logo.webp' %}" alt=""> -->
+          <h1 class="sitename">Medix Hub</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'departments' %}">Departments</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'doctors' %}">Doctors</a></li>
+            <li class="dropdown"><a href="#"><span>More Pages</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="{% url 'department_details' %}">Department Details</a></li>
+                <li><a href="{% url 'service_details' %}">Service Details</a></li>
+                <li><a href="{% url 'appointment' %}">Appointment</a></li>
+                <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+                <li><a href="{% url 'faq' %}">Frequently Asked Questions</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'terms' %}">Terms</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy</a></li>
+                <li><a href="{% url 'not_found' %}">404</a></li>
+              </ul>
+            </li>
+                        <li><a href="{% url 'contact' %}" class="active">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Contact</h1>
+              <p class="mb-0">Medix Hub is dedicated to compassionate, reliable healthcare. Our experienced team is here to support your health with care tailored to you and your family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="contact-info-wrapper">
+              <img src="{% static 'images/facilities-6.webp' %}" class="img-fluid rounded-3 mb-4"
+                alt="Clinic care facility">
+              <div class="contact-info-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="info-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Our Address</h3>
+                  <p>1842 Maple Avenue, Portland, Oregon 97204</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Email Address</h3>
+                  <p>info@example.com</p>
+                  <p>contact@example.com</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="info-icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Hours of Operation</h3>
+                  <p>Sunday-Fri: 9 AM - 6 PM</p>
+                  <p>Saturday: 9 AM - 4 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form-card" data-aos="fade-up" data-aos-delay="200">
+              <h2>Send us a Message</h2>
+              <p class="mb-4">Have questions or want to learn more? Reach out to us and our team will get back to you
+                shortly.</p>
+
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-success" role="status">{{ message }}</div>
+                {% endfor %}
+              {% endif %}
+
+              <form action="{% url 'contact' %}" method="post" class="php-email-form">
+                {% csrf_token %}
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    {{ form.fullName }}
+                    {{ form.fullName.errors }}
+                  </div>
+
+                  <div class="col-md-6">
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                  </div>
+
+                  <div class="col-12">
+                    {{ form.phoneNumber }}
+                    {{ form.phoneNumber.errors }}
+                  </div>
+
+                  <div class="col-12">
+                    {{ form.subject }}
+                    {{ form.subject.errors }}
+                  </div>
+
+                  <div class="col-12">
+                    {{ form.message }}
+                    {{ form.message.errors }}
+                  </div>
+
+                  {% if form.non_field_errors %}
+                    <div class="col-12">{{ form.non_field_errors }}</div>
+                  {% endif %}
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid map-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="map-overlay"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5178.189517415479!2d36.82364909476775!3d-1.2843222467431192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11fa64ae7a9b%3A0x6da13531a93c45a2!2sKenya%20National%20Archives!5e1!3m2!1sen!2ske!4v1795203854585!5m2!1sen!2ske"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  {% include "includes/footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#header" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <!-- Main JS File -->
+  <script src="{% static 'javascripts/main.js' %}"></script>
+
+</body>
+
+</html>
