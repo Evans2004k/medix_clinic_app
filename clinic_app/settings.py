@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d59@e^6105ydcpuv1p1!!0#_qcz0k-67de#j6!9%ecb^rtq!*7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['medix-clinic-app-1.onrender.com', '.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
